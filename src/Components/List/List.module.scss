@@ -1,0 +1,13 @@
+.list {
+  width: 90%;
+  height: 80%;
+  //border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: var(--bg-modal);
+  border-radius: 12px;
+  padding: 10px 0;
+  overflow-y: scroll;
+}

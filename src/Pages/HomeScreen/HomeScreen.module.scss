@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: var(--bg-main);
+  border-radius: 12px;
+  color: var(--cr-text-disabled);
+}
+
+
+

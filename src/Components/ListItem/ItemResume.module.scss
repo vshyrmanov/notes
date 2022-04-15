@@ -1,0 +1,25 @@
+.item {
+  width: 100%;
+  border-bottom: 1px solid var(--btn-borders);
+  //margin: 10px 0;
+  padding: 10px;
+  background: var(--bg-btn);
+  //border-radius: 12px;
+  color: var(--cr-text-disabled);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 250ms ease-in-out;
+  &:hover {
+    background: var(--bg-hover);
+    color: var(--cr-text-dark-bg);
+  }
+  .item_element {
+    min-width: 150px;
+    //border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

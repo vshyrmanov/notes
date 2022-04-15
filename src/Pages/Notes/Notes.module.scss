@@ -1,0 +1,181 @@
+.notes_main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: scroll;
+  background: var(--bg-main);
+  border-radius: 12px;
+  position: relative;
+  .loading {
+    align-self: center;
+    font-size:24px;
+    font-weight: 600;
+    color: var(--cr-text-disabled);
+  }
+
+  .notes_add {
+    position: fixed;
+    top: 15%;
+    right: 1%;
+    cursor: pointer;
+    fill: rgba(255,255,255, 0.5);
+    z-index: 5;
+    transition: 250ms ease-in-out;
+    &:hover {
+      fill: rgba(255,255,255, 1);
+    }
+  }
+
+  .notes_card {
+    width: 400px;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius:12px;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 14px;
+    background: #282828;
+    color: #fff;
+    position: relative;
+    transition: width 400ms ease-in-out, height 400ms ease-in-out;
+
+    .bgPicker {
+      border: 1px solid red;
+      width: 70%;
+      height: 50%;
+      background: #fff;
+    }
+    p {
+      width: 93%;
+      height: 12rem;
+      overflow-y: scroll;
+      white-space: pre-line;
+      outline: none;
+      scroll-behavior: smooth;
+      padding: 5px;
+      transition: height 400ms ease-in-out;
+    }
+    textarea {
+      width: 93%;
+      height: 80%;
+      overflow-y: scroll;
+      white-space: pre-line;
+      outline: none;
+      resize: none;
+      scroll-behavior: smooth;
+      border: 1px dotted rgba(126, 125, 125, 0.54);
+      font-family: inherit;
+      font-size: inherit;
+      padding: 5px;
+      text-align: inherit;
+    }
+
+    .colorPicker {
+      position: absolute;
+    }
+    .activities {
+      position: absolute;
+      bottom: 5%;
+      background: rgba(255, 255, 255, 0.53);
+      width: 25px;
+      height: 25px;
+      padding: 5px;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+    .edit {
+      top: 5px;
+      right: 5px;
+      background: rgba(255, 255, 255, 0.28);
+      &:hover {
+        background: rgba(255, 255, 255, 0.5);
+      }
+    }
+    .remove {
+      right: 5px;
+      &:hover {
+        background: rgba(232, 43, 43, 0.8);
+      }
+    }
+    .widthSize {
+      right: 35px;
+      &:hover {
+        background: rgba(99, 232, 116, 0.8);
+      }
+    }
+    .heightSize {
+      right: 65px;
+      transform: rotate(90deg);
+      &:hover {
+        background: rgba(99, 232, 116, 0.8);
+      }
+    }
+    .cancel {
+      padding: 0;
+      right: 60%;
+      fill: #fff;
+      background: rgba(232, 43, 43, 0.8);
+      &:hover {
+        background: rgba(232, 43, 43, 1);
+      }
+    }
+    .success {
+      fill: #fff;
+      padding: 0;
+      right: 40%;
+      background: rgba(99, 232, 116, 0.8);
+      &:hover {
+        background: rgba(99, 232, 116, 1);
+      }
+    }
+    .textColor {
+      left: 40px;
+    }
+    .textColor, .bgColor {
+      background: rgba(255, 255, 255, 0.28);
+      &:hover {
+        background: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 768px) {
+  .notes_main {
+    padding: 70px 0;
+    .notes_add {
+      top: 5%;
+      z-index: 99;
+
+    }
+    .notes_card {
+      height: 100px;
+      p {
+        height: 80%;
+      }
+      .edit, .remove, .widthSize, .heightSize, .textColor, .bgColor {
+        &:hover {
+          background: rgba(255, 255, 255, 0.53);
+        }
+      }
+      .cancel {
+        &:hover {
+          background: rgba(232, 43, 43, 0.8);
+        }
+      }
+      .success {
+        &:hover {
+          background: rgba(99, 232, 116, 0.8);
+        }
+      }
+
+    }
+  }
+}

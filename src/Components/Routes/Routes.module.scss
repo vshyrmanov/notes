@@ -1,0 +1,18 @@
+.home_main {
+  width: 85%;
+  height: 100%;
+  transition: 400ms ease-in-out;
+  background: var(--bg-main);
+}
+
+.home_pullOf {
+  width: 95%;
+}
+
+
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 768px) {
+  .home_main {
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+.genButton {
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--cr-text-disabled);
+  background: var(--bg-btn);
+  width: 140px;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: 250ms ease-in-out;
+  border: none;
+  &:hover {
+    background: var(--bg-hover);
+    color: var(--cr-text-dark-bg);
+
+  }
+}

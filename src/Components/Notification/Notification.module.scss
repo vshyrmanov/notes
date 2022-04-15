@@ -1,0 +1,40 @@
+.notification {
+  position: absolute;
+  //border: 1px solid red;
+  bottom: 5%;
+  right: 5%;
+  max-width: 400px;
+  height: 100px;
+  background: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  color: #fff;
+  padding: 0 30px;
+  border-radius: 12px;
+  user-select: none;
+  font-size: 14px;
+  text-align: left;
+  .closebtn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    fill: rgba(255,255,255, 0.5);
+    &:hover {
+      fill: rgba(255,255,255, 1);
+    }
+  }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 768px) {
+  .notification {
+    top: 5%;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}

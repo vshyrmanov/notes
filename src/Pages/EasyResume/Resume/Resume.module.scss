@@ -1,0 +1,136 @@
+.main {
+  background: #fff;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  overflow-y: scroll;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  .container {
+    border: 1px solid #bebebe;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 250px auto;
+    .aside {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      //padding: 10px 0;
+      background: #4269b7;
+      color: rgba(255, 255, 255, 0.56);
+      .photo {
+        background-image: url('https://vshyrmanov.github.io/resume/img/photo.jpg');
+        height: 250px;
+        width: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        //border: 1px solid red;
+
+      }
+      h3 {
+        //border: 1px solid red;
+        width: 250px;
+        padding: 5px 0 0 25px;
+        font-weight: 400;
+      }
+      .section {
+        //border: 1px solid red;
+        width: 250px;
+        padding-left: 25px;
+        ul {
+          padding: 15px;
+          li {
+            font-size: 13px;
+            //border: 1px solid red;
+            display: flex;
+            justify-content: flex-start;
+            padding: 5px;
+            svg {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+    .mainInfo {
+      color: rgba(5, 0, 0, 0.68);
+
+      h3 {
+        font-weight: 500;
+      }
+
+      .main_section {
+        //border: 1px solid red;
+        padding: 10px;
+        margin: 10px;
+        width: 80%;
+        ul {
+          li {
+            list-style: none;
+          }
+        }
+      }
+      .title {
+        h4 {
+          margin: 20px;
+          font-size: 15px;
+          font-weight: 400;
+        }
+        h2 {
+          margin: 20px;
+          font-size: 35px;
+          font-weight: 500;
+        }
+
+      }
+      .about {
+        width: 60%;
+        text-align: justify;
+      }
+      .experience {
+        ul {
+          h4, p {
+            margin: 10px 0 10px 20px;
+          }
+          h4 {
+            font-weight: 500;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 300;
+          }
+          li {
+            margin-left: 25px;
+            font-weight: 400;
+          }
+        }
+      }
+      .education {
+        h4, label, p {
+          margin: 10px 0 10px 20px;
+        }
+        label, p {
+          margin-left: 25px;
+        }
+        h4 {
+          font-weight: 500;
+        }
+        label {
+          font-weight: 400;
+        }
+        p {
+          font-size: 14px;
+          font-weight:300;
+        }
+      }
+    }
+  }
+}

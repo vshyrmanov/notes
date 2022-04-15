@@ -1,0 +1,23 @@
+.myInput {
+  border-bottom: 1px solid var(--btn-borders);
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+
+  input {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+
+  svg {
+    position: absolute;
+    right: 10px;
+    fill: var(--cr-text-disabled);
+    cursor: pointer;
+    &:hover {
+      fill: var(--cr-text-dark-bg);
+    }
+  }
+}
